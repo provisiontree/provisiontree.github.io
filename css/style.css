@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+/* Reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {	display: block;}	
+/* HTML5 display-role reset for older browsers */
+html, body {height: 100%; }
+ol, ul {	list-style: none;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {	content: '';	content: none;}
+table {	border-collapse: collapse;	border-spacing: 0;}
+p{margin:0px; padding:0px;}
+input, select { vertical-align:middle;}
+
+
+@font-face {
+    font-family: 'GEsansLight45';
+    src: url('lige__-webfont.eot');
+    src: url('lige__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lige__-webfont.woff') format('woff'),
+         url('lige__-webfont.ttf') format('truetype'),
+         url('lige__-webfont.svg#GEsansLight45') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GEsansLight45Italic';
+    src: url('ligei_-webfont.eot');
+    src: url('ligei_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ligei_-webfont.woff') format('woff'),
+         url('ligei_-webfont.ttf') format('truetype'),
+         url('ligei_-webfont.svg#GEsansLight45Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2, h3, h4, h5, h6{margin:0px; padding:0px;}
+h1{ font: normal 56px/72px GEsansLight45, Georgia, serif; }
+h1 span, h3 span{ font-weight:bold;}
+h2 { font: normal 48px/50px GEsansLight45, Georgia, serif; color:#333; }
+h2 span{ color:#3399ff;}
+h2 em{ font: normal 36px/50px Georgia, "Times New Roman", Times, serif; color:#669900;}
+h3 { font: normal 45px GEsansLight45, Georgia, serif; }
+h4 { font: normal 24px Georgia, "Times New Roman", Times, serif; }
+h5{ font: normal 18px Georgia, "Times New Roman", Times, serif; }
+h6{ font: normal 14px Georgia, "Times New Roman", Times, serif; }
+/* clear */
+.clearfix { zoom: 1;}
+.clear{ clear:both;}
+img{border:0px;}
+div {zoom: 1 ;}
+article:after,aside:after,div:after,form:after,header:after,nav:after,section:after,ul:after,label:after{clear:both;content:".";display:block;height:0;overflow: hidden;}
+/* Anchors */
+a {  margin:0; padding:0;  font-size:100%; vertical-align:baseline;  background:transparent; outline: 0; color:#000;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {text-decoration: none;}
+a:hover, a:active {	text-decoration: underline	;}
+
+/* general */
+body {  background: url(../images/body_bg_new.png) repeat; margin:0px; padding:0px; font: normal 14px Georgia, "Times New Roman", Times, serif; position: static;}
+header{width:900px; margin:0 auto; position:relative; clear:both; margin-top:25px;}
+.header_fix { background: url(../images/body_bg.png) repeat;  bottom: 0;  height: 120px;  left: 0; top:0; position: fixed;    right: 0; text-align: center;   z-index: 9998; width:1100px; margin:0 auto;}
+.allbox{ width:1100px; position:relative; margin-top: 137px !important; margin:0 auto; }
+.header_hr{ margin-top:32px; z-index:9999; position: absolute;}
+.logo{ float:left; padding:0px; margin:0px;}
+hr {display:block; height:1px;  border:0; border-top:1px solid #ccc;  padding:0; margin:25px 0px 15px 0px;}
+.container{ width:900px; margin:0 auto; position:relative; margin-top:25px;}
+.innercontainer{ width:900px; margin:0 auto; position:relative; margin-top:80px;}
+.flt{ float:left;}
+.frt{ float:right;}
+
+.button{ float:left; margin-right:10px;}
+.button a{ cursor:pointer; background: url(../images/sprite.png) no-repeat right -32px; margin-right:10px; padding:0px 15px; vertical-align:top;  text-decoration:none; display:block; /*opera*/ display:inline-block; /*ie*/ }
+.button a span { background:url(../images/sprite.png) no-repeat left -32px; height:32px; display: block; display:inline-block; margin-left:-30px; padding:0px 0px 0 15px; font:normal 14px/32px Lucida Grande, Arial, Helvetica, sans-serif; color:#fff; text-decoration:none; outline:none; }
+.button a:hover, .button a.current  { background-position:right 0px; text-decoration:none; color:#000; }
+.button a:hover span,.button a.current span { background-position:left 0px; text-decoration:none; color:#000;}
+
+/* Global navigation */
+
+ul.nav {padding:0px; margin-right:-20px; padding-top:22px; float:right;}
+ul.nav li  {float:left; margin-right:10px;}
+ul.nav li a{cursor:pointer; background: url(../images/sprite.png) no-repeat right top; margin-right:10px; padding:0px 15px; vertical-align:top;  text-decoration:none; display:block; /*opera*/ display:inline-block;}
+ul.nav li a span{background:url(../images/sprite.png) no-repeat left top; height:32px; display: block; display:inline-block; margin-left:-30px; padding:0px 0px 0 15px; font:normal 12px/32px Lucida Grande, Arial, Helvetica, sans-serif; color:#000; text-decoration:none; outline:none;}
+ul.nav li a:hover {background-position:right -32px; text-decoration:none; color:#fff;}
+html ul.nav li.active, html ul.nav li.active a:hover{ background-position:right -32px; text-decoration:none; color:#fff; }
+html ul.nav li.active span, html ul.nav li.active a:hover span{ background-position:right -32px; text-decoration:none; color:#fff;}
+ul.nav li a:hover span { background-position:left -32px; text-decoration:none; color:#fff;}
+ul.nav li a{position:relative; }
+ul.nav li.current a{ background-position:right -32px; text-decoration:none; color:#fff;}
+ul.nav li.current a span{ background-position:left -32px; text-decoration:none; color:#fff;}
+
+.home_container{ background:url(../images/home_container_bg.png) no-repeat center 0px;}
+.we_hiring{background: url(../images/sprite.png) no-repeat 0 -69px; width:121px; position:absolute; height:25px; top:54px; right:20px;}
+
+/* Slideshow */
+.container_slide{ width:900px; margin:0 auto; background:url(../images/slider_bg.jpg) no-repeat center; margin-top:50px; height:393px; position:relative;}
+.testimonial_slide{ width:895px; margin:0 auto; background:#fff; margin-top:50px; height:339px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 1px solid #fff; margin-bottom:25px;}
+.testimonial_slide .head{ text-align:center; padding-top:20px;}
+#slides {position:absolute; z-index:100; left:20px;}
+#slides_two {z-index:110;}
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	If height not specified height will be set by the slide content
+	Set to display none, prevents content flash
+*/
+#slides .slides_container, #slides_two .slides_container  {width:880px;	overflow:hidden; position:relative; display:none;}
+
+/*
+	Each slide 
+	Important:
+	Set the width of your slides
+	Offeset for the 20px of padding
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+#slides .slide {padding:20px 20px 20px 0px; width:860px; height:260px; display:block; margin:0 auto; text-align:center; position:relative; margin-top:25px;}
+#slides_two .slide {padding:0px 0px; width:860px; display:block; margin:0 auto; text-align:center; position:relative; height:180px;}
+#slides p{ font:normal 20px Georgia, "Times New Roman", Times, serif; color:#333; font-weight:500 !important; margin-top:14px;}
+/* Next/prev buttons */
+/*#slides .next,#slides .prev {position:absolute;	top:107px;	left:-39px;	width:24px;	height:43px; display:block;	z-index:101;}
+#slides .next {	left:585px;}*/
+/* Pagination */
+.pagination { margin-left:410px; }
+.pagination li {float:left;	margin:0 1px; list-style:none; margin-top:25px;}
+.pagination li a {display:block; width:14px; height:4px; padding-top:12px; background:url(../images/sprite.png) no-repeat -30px -102px; overflow:hidden; margin-right:10px;}
+.pagination li.current a {background-position:-10px -102px;}
+/* Home page */
+.hand_line{ background:url(../images/hands_lines.png) no-repeat; position:absolute; z-index:102; width:751px; height:616px; top:40px; left:90px;}
+.outsourced_box{ background:url(../images/sprite.png) no-repeat right -74px; width:122px; height:122px; position:absolute; z-index:103; right:0px; top:-25px;}
+.design_box{ background:url(../images/sprite.png) no-repeat right -425px; width:128px; height:126px; position:absolute; z-index:103; right:0px; top:-25px; margin-right:15px;}
+.btn_solutions{ position:absolute; z-index:105; top:241px; left:26px;}
+.btn_knowus{ position:absolute; z-index:105; top:488px; right:5px;}
+.hm_solutions{ margin:82px 0px 0px 223px;}
+.hm_knowus{ margin:115px 170px 35px 0px;}
+.hm_head{ margin-top:40px;}
+.quotation{ background:url(../images/quote.png) no-repeat; text-align:left !important; margin-top:30px; padding:15px 20px;}
+.client_name{ float:left; color:#333; text-align:right;}
+.client_logo{ float:left; border-left:1px solid #e7e7e7; margin-left:20px; padding-left:20px;}
+.client_details{ width:400px; margin:0 auto;}
+.client_details1{ margin:0px 0px 0px 245px;}
+
+/* inner pages */
+.innerhead{ border:1px solid #999; border-left:none; border-right:none; margin-bottom:15px;}
+.multiple_platforms{ background:url(../images/solution_pic1.png) no-repeat right 0px ; margin:40px 0px 0px 0px;}
+.multiple_platforms div{width:390px; margin:25px 0px 0px;}
+.multiple_platforms p{margin-top:12px;}
+.career_tagline hr{ background:url(../images/solutions_bg.png) no-repeat  center 35px; width:900px; height:80px; border:none !important;}
+.multiple_platforms hr{ background:url(../images/solutions_bg.png) no-repeat  center top; width:900px; height:50px; border:none !important;}
+.multiple_platforms del, .career_tagline del { color:#999;}
+
+.career_mailus{font: normal 24px/75px GEsansLight45, Georgia, serif; text-align:center; color:#333;}
+.career_tagline{ background:url(../images/target.png) no-repeat right 0px ; margin:40px 0px 0px 0px;}
+.career_tagline p{width:450px; margin:60px 0px 30px;}
+.more{ background:#3399ff; padding:2px 7px; color:#fff; font:normal 12px "Lucida Grande", "Lucida Sans Unicode",  sans-serif; height:18px; line-height:18px;}
+.more:hover { text-decoration:none;}
+.job_list{ margin:40px 0px 0px;}
+.candidate{ background:url(../images/candidate.png) no-repeat center center; text-align:center; padding:110px 0px 10px;font: normal 24px GEsansLight45, Georgia, serif; color:#333;}
+form{ position:relative; clear:both; font: normal 14px GEsansLight45, Georgia, serif; color:#000; text-align:left;}
+.career_whitebox{ background:#fff; width:870px; padding:15px;}
+label{ float:left; width:175px; margin-top:5px;}
+input, textarea, input[type=file]{ background:#e5e5e5; width:360px; border: 0px; padding:5px; font: normal 14px GEsansLight45, Georgia, serif;}
+select{ background:#e5e5e5; border: 0px; padding:5px; font: normal 14px GEsansLight45, Georgia, serif;}
+.submit{ background: url(../images/sprite.png) no-repeat 0px -415px; width:260px; height:200px; border:none; float:right; position:absolute; right:0px; top:-10px; cursor:pointer;}
+.submit:hover{ background: url(../images/sprite.png) no-repeat -262px -415px; width:260px; height:200px; border:none;}
+input:focus, textarea:focus{background: #eaeaea;}
+.input_margin{ margin-bottom:15px;}
+i{ font:italic 10px "Lucida Sans Unicode", "Lucida Grande", sans-serif; color:#4f4e4e;}
+i span{ color:#ff0000;}
+.whitebox_mar{ margin-bottom:33px;}
+
+#success{color:green; font-weight:normal; margin:30px 0px 0 10px; float:left;}
+#error{color:red; font-weight:normal; margin:30px 0px 0 10px; float:left;}
+.contact-email,.contact-names, .contact-company{ }
+.contact-commnent{ height:65px;}
+.comment-required, .name-required, .email-required, .company-required{color:red; margin:0px 0px 0px 15px; font-size:12px;}
+.contact{}
+.contact hr{ background:url(../images/solutions_bg.png) no-repeat  center top; width:900px; height:49px; border:none; margin:0px !important; margin-top:-3px !important;}
+.contact_address{ width:400px; float:left}
+.contact_icons{ width:470px; float:right; margin-top:20px;}
+.contact_icons img{ margin-bottom:15px;}
+.contact_call{ width:140px; font: normal 11px "Lucida Sans Unicode", "Lucida Grande", sans-serif; text-align:center; float:left; margin-top:1px;}
+.contact_skype{ width:160px; font: normal 12px "Lucida Sans Unicode", "Lucida Grande", sans-serif; text-align:center; float:left;}
+.contact_email{ width:160px; font: normal 12px "Lucida Sans Unicode", "Lucida Grande", sans-serif; text-align:center; float:left; margin-top:4px;}
+.contact_bar{ background:url(../images/bar.png) no-repeat; width:2px; height:132px; float:left;}
+.contact_form{}
+.form_hite{ height:50px;}
+.form_hite1{ height:85px;}
+.form_hite2{ height:52px;}
+.contact_whitebox{padding:15px 20px; width:860px; margin:40px 0px; background:#fff; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 1px solid #fff; }
+.contact_form .head{ font: normal 32px GEsansLight45, Georgia, serif; color:#333; margin-bottom:20px;}
+.contact_services{ width:280px; margin:45px 20px 0px 0px; float:left;}
+.contact_services p{ margin-bottom:25px;}
+.our_location{ margin-bottom:15px;}
+.contact_submit{ background:url(../images/btn_submit.png) no-repeat; width:134px; height:47px; cursor:pointer; margin-top:15px;}
+.contact_submit:hover{ background:url(../images/btn_submit_hover.png) no-repeat;}
+.required{ margin:50px 0px 0px;}
+button{border: none; float:left;}
+.aboutus_tagline{ margin:43px 0px;}
+.aboutus_tagline span{font: normal 24px GEsansLight45, Georgia, serif ; color:#999;}
+.meetstars, .team_details{ margin-top:40px; }
+.leftwave{ margin:0px 12px 6px 0px;}
+.rightwave{ margin:0px 0px 6px 0px;}
+.team_details img { float:left;}
+.team_details p{ margin-top:30px;}
+.team_details a{ font: normal 18px GEsansLight45, Georgia, serif; color:#45a4fd; margin-top:30px;}
+.management{ width:860px; margin:0 auto; background:#fff; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 1px solid #fff; padding:20px; margin-top:40px;}
+
+
+/* percentage based grid */
+/*.jcarousel-skin-tango .jcarousel-container { -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}*/
+.jcarousel-skin-tango .jcarousel-direction-rtl {direction: rtl;}
+.jcarousel-skin-tango .jcarousel-container-horizontal {padding: 15px 20px;}
+.jcarousel-skin-tango .jcarousel-clip { overflow: hidden;}
+/*.jcarousel-skin-tango .jcarousel-clip-horizontal { width:  245px; height: 75px;}*/
+/*.jcarousel-skin-tango .jcarousel-item { width: 75px; height: 75px;}*/
+.jcarousel-skin-tango .jcarousel-item-horizontal {margin-left: 0;  margin-right: 6px !important; width:75px !important;}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {	margin-left: 10px; margin-right: 0;}
+.jcarousel-skin-tango .jcarousel-item-placeholder { background: #fff; color: #000;}
+/** *  Horizontal Buttons */
+.jcarousel-skin-tango .jcarousel-next-horizontal { position: absolute; top: 35px; right: 12px; width: 36px; height: 40px; cursor: pointer; background: transparent url(../images/next-horizontal.png) no-repeat 0 0;}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal { right: 12px; right: auto;  background-image: url(../images/prev-horizontal.png);}
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover,.jcarousel-skin-tango .jcarousel-next-horizontal:focus { background-position: -88px 0;}
+.jcarousel-skin-tango .jcarousel-next-horizontal:active {background-position: -43px 0;}
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal, .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:hover, .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:focus, .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:active { cursor: default; background-position: -131px 0;}
+.jcarousel-skin-tango .jcarousel-prev-horizontal { position: absolute; top: 35px; left: 12px; width: 36px; height: 40px; cursor: pointer; background: transparent url(../images/prev-horizontal.png) no-repeat 0 0;}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal { left: auto; left: 12px; background-image: url(../images/next-horizontal.png);}
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover, .jcarousel-skin-tango .jcarousel-prev-horizontal:focus { background-position: -43px 0;}
+.jcarousel-skin-tango .jcarousel-prev-horizontal:active { background-position: -87px 0;}
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal, .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:hover, .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:focus, .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active { cursor: default; background-position: -131px 0;}
+
+/* Team details (Pic and photo) */
+ul.team_description {margin: 0;padding: 0;float: left;list-style: none; float:left; margin:0px 40px 0px 40px}
+ul.team_description li  {list-style:none;float:left;}
+ul.team_description li a{display:block; vertical-align:middle; border:5px solid #ccc; width:65px; height:65px;}
+/*ul.team_description li a em{width:100%;display:block;margin:0px 0;font-style:normal;padding:25px 0px; font-weight:bold;}*/
+ul.team_description li a:hover {color:#FFFF99;cursor:hand; border:5px solid #000;}
+html ul.team_description li.active, html ul.team_description li.active a:hover{ background: #fff; border:5px solid #000; }
+ul.team_description li a{position:relative; }
+ul.team_description li.current a{ position:relative; border:5px solid #000;}
+
+
+/* Team Pic */
+.team_desc div{width:490px; float:right; height:401px;}
+.gunjan { background:url(../images/gunjan.jpg) no-repeat; }
+.meetu { background:url(../images/meetu.jpg) no-repeat;}
+.amit{ background:url(../images/amit.jpg) no-repeat; }
+.anubhav  { background:url(../images/anubhav.jpg) no-repeat; }
+.avinash{ background:url(../images/avinash.jpg) no-repeat; height:401px;}
+.gunja{ background:url(../images/gunja.jpg) no-repeat; }
+.pooja{ background:url(../images/pooja.jpg) no-repeat; }
+.himanshu{ background:url(../images/himanshu.jpg) no-repeat; }
+.kapil{ background:url(../images/kapil.jpg) no-repeat; }
+.ashish{ background:url(../images/ashish.jpg) no-repeat; }
+.arvind{ background:url(../images/arvind.jpg) no-repeat; }
+.vishnu { background:url(../images/vishnu.jpg) no-repeat; }
+.vibhash { background:url(../images/vibhash.jpg) no-repeat; }
+.rahil{ background:url(../images/rahil.jpg) no-repeat;}
+.rupali{ background:url(../images/rupali.jpg) no-repeat; }
+.anshul{ background:url(../images/anshul.jpg) no-repeat;}
+.atul{ background:url(../images/atul.jpg) no-repeat; }
+.tarun{ background:url(../images/tarun.jpg) no-repeat;}
+.jitendra{ background:url(../images/jitendra.jpg) no-repeat; ;}
+.abhay{ background:url(../images/abhay.jpg) no-repeat;}
+.naveen{ background:url(../images/naveen.jpg) no-repeat; }
+.kalpesh{ background:url(../images/kalpesh.jpg) no-repeat;}
+.ghanshyam{ background:url(../images/ghanshyam.jpg) no-repeat;}
+.manorama{ background:url(../images/manorama.jpg) no-repeat; }
+.shruti{ background:url(../images/shruti.jpg) no-repeat;}
+.lavkumar{ background:url(../images/lavkumar.jpg) no-repeat;}
+.swati{ background:url(../images/swati.jpg) no-repeat;}
+.vibha{ background:url(../images/default.jpg) no-repeat;}
+
+
+
+/* percentage based grid */
+/* 
+class name .cols used for column containers
+class name .col used for individual columns
+*/		
+.cols{overflow:hidden;} /* main column container class */
+.cols p{margin-top:40px;}
+.col, .col2, .col3, .col4, .col5{float:left; display:inline; margin-left:30px;  /* only for demo purposes - remove this line */}	
+.cols .first, .col:first-child{margin-left:0px !important;}
+.cols2 .col{width:415px; margin-top:30px;} /* 2 equal width columns */
+.cols2 .col img{ border:5px solid #ccc; background:#e8e7e7; text-align:center; float:left; padding:5px 10px 0px; margin-right:30px;}
+.cols2 .col h2{ margin-top:34px;}
+.cols2 .col p{ text-align: justify; margin-top:18px;}
+.cols3 .col{width:272px;} /* 2 equal width columns */
+.cols3 .col p{ text-align: justify;}
+.expertise_app{background: url(../images/sprite.png) no-repeat 0px -267px;  width:160px; height:140px; margin-left:55px;}
+.expertise_startup{background: url(../images/sprite.png) no-repeat -168px -260px;  width:220px; height:140px;  margin-left:25px;}
+.expertise_product{background: url(../images/sprite.png) no-repeat -394px -267px;  width:190px; height:140px; bottom:0px; margin-left:40px;}
+/* percentage based grid */
+	
+ 
+/* Twitter */
+.provision_twitter{ background:url(../images/footer_bg.png) repeat; border:1px solid #fff; border-left:none; border-right:none; padding:25px 0px; margin:0px 0px 25px;}
+.provision_twitter1{ background:url(../images/footer_bg.png) repeat; border:1px solid #fff; border-left:none; border-right:none; padding:25px 0px; margin:0px 0px 25px;}
+.twitter_container{width:920px; margin:0 auto; position:relative;}
+.tweets_bg{ background: url(../images/sprite.png) no-repeat -125px -78px;  width:92px; height:67px; float:left; margin-top:30px;}
+.tweets_other{ width:810px; float:right;}
+.tweet{ background:#ebebeb; padding:12px 10px; margin:8px 0px 17px; color:#333;}
+.tweet strong{ font-weight:normal !important; color:#999;}
+.tweets span{ color:#999;}
+.tweet_arrow{ background:url(../images/tweet_arrow.png) no-repeat; position:absolute; top:45px; width:10px; height:12px; left:100px;} 
+.icon_twitter{ background:url(../images/sprite.png) no-repeat -219px -67px; width:170px; height:70px; float:left;}
+.connect_us{ background:url(../images/sprite.png) no-repeat -0px -168px; width:466px; height:70px; float:left;}
+.icon_linkedin{ background:url(../images/sprite.png) no-repeat -397px -67px; width:172px; height:70px; float:left;}
+/* Footer */
+footer{ font:normal 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif; width:920px; margin:0 auto; padding-bottom:34px;}
+ul.nav1{ float:right;}
+ul.nav1 li{ float:left; margin-right:10px;}
+ul.nav1 li a{ text-decoration: none; color:#000; float:left; margin-right:10px;}
+ul.nav1 li a:hover{ text-decoration: underline;}
+ul.nav1 li.current a{ text-decoration: none; font-weight:bold;	}
+jcarousel-list-horizontal{overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: -1410px; width: 2450px !important;}
